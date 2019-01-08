@@ -37,7 +37,7 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
           conn = DBConnection.getInstance().getConnect();
            st = conn.createStatement();
            String qry;
-           qry = "insert into AddressBook values ('"+person.getName()+"','"+person.getMob()+"','"+person.getEmail()+"')";
+           qry = "insert into AddressBook values ('"+person.getName()+"','"+person.getMob()+"','"+person.getEmail()+"',,)";
            st.executeUpdate(qry);
            conn.close();
         }

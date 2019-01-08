@@ -83,7 +83,7 @@ public class AddressBookController {
             String name = contactDetailsPanel.getNameField().getText();
             String mobile = contactDetailsPanel.getMobileField().getText();
             String email = contactDetailsPanel.geteMailField().getText();
-            String address = contactdetailspanel.getAddressField().getText();
+            String address = contactDetailsPanel.getAddressField().getText();
             flag = validate();
             if(flag)
             {    
@@ -160,6 +160,7 @@ public class AddressBookController {
         dialog.getPanel().setName(detailPanel.getNameField().getText());
         dialog.getPanel().setMobile(detailPanel.getMobileField().getText());
         dialog.getPanel().seteMail(detailPanel.geteMailField().getText());
+        dialog.getPanel().setAddress(detailPanel.getAddressField().getText());
         view.getMainGUIFrame().setVisible(false);
         choiceListener = new ActionListener() {
             @Override
@@ -170,9 +171,10 @@ public class AddressBookController {
                 contactDetailsPanel = dialog.getPanel();
                 String name = contactDetailsPanel.getNameField().getText();
                 String mobile = contactDetailsPanel.getMobileField().getText();
-                String email = contactDetailsPanel.geteMailField().getText();   
-                String address = contactDetailsPanel.getaddressField().getText();
-                flag = validate();
+                String email = contactDetailsPanel.geteMailField().getText();
+                String address = contactDetailsPanel.getAddressField().getText();
+
+                 flag = validate();
                 if(flag)
                 {    
                 Person person = new Person();
@@ -236,9 +238,8 @@ public class AddressBookController {
                     });  
          detailPanel.getNameField().setEditable(false);
          detailPanel.getMobileField().setEditable(false);
-         detailPanel.getMailField().setEditable(false);
-         detailpanel.getaddress().setEditable)(false);
-        }
+         detailPanel.geteMailField().setEditable(false);
+                 }
     }  //loadPersons ends
     
     public void getSelectedPerson(String selectedName)

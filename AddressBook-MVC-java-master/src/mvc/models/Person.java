@@ -44,7 +44,7 @@ public class Person {
     public String getEmail(){
         return this.email; 
    }
-    public String getaddress()
+    public String getAddress(){
             return this.address;
 }
     public void setData(String name, String mob,String email,String address){

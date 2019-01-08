@@ -39,6 +39,11 @@ public class DetailViewPanel extends javax.swing.JPanel {
         return txt_email;
         
     }
+      public javax.swing.JTextField getAddressField()
+      {
+          return txt_address;
+      }
+  
       public void setName(String name)
       {
           txt_name.setText(name);
@@ -51,6 +56,10 @@ public class DetailViewPanel extends javax.swing.JPanel {
       {
           txt_email.setText(email);
       }
+        public void setAddress(String address)
+        {
+            txt_address.setText(address);
+        }
         public JComponent getComponent() 
         {
             return this;
@@ -72,8 +81,8 @@ public class DetailViewPanel extends javax.swing.JPanel {
         txt_name = new javax.swing.JTextField();
         txt_mobileno = new javax.swing.JTextField();
         txt_email = new javax.swing.JTextField();
-        txt_address = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        address = new javax.swing.JLabel();
+        txt_address = new javax.swing.JTextField();
 
         jLabel4.setText("jLabel4");
 
@@ -99,13 +108,13 @@ public class DetailViewPanel extends javax.swing.JPanel {
         txt_email.setBackground(new java.awt.Color(153, 255, 153));
         txt_email.setName("txt_email"); // NOI18N
 
-        txt_address.setFont(new java.awt.Font("Tahoma", 2, 24)); // NOI18N
-        txt_address.setText("ADDRESS");
-        txt_address.setName("txt_address"); // NOI18N
+        address.setFont(new java.awt.Font("Tahoma", 2, 24)); // NOI18N
+        address.setText("ADDRESS");
+        address.setName("address"); // NOI18N
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txt_address.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txt_addressActionPerformed(evt);
             }
         });
 
@@ -123,17 +132,18 @@ public class DetailViewPanel extends javax.swing.JPanel {
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(txt_address, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(21, 21, 21)
+                        .addComponent(address, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txt_name)
                             .addComponent(txt_mobileno)
                             .addComponent(txt_email, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 356, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addContainerGap(235, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txt_address, javax.swing.GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -152,23 +162,23 @@ public class DetailViewPanel extends javax.swing.JPanel {
                     .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt_address, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(address, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txt_addressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_addressActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txt_addressActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel address;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel txt_address;
+    private javax.swing.JTextField txt_address;
     private javax.swing.JTextField txt_email;
     private javax.swing.JTextField txt_mobileno;
     private javax.swing.JTextField txt_name;
