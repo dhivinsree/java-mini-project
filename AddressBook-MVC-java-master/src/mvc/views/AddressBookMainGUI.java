@@ -34,6 +34,7 @@ public class AddressBookMainGUI {
     private JButton btn_edit;
     private JButton btn_delete;
     private JPanel panel_btn;
+    private JButton btn_search;
     
     
     
@@ -87,6 +88,8 @@ public class AddressBookMainGUI {
         
         btn_delete = new JButton("Delete");
         panel_btn.add(btn_delete);
+        
+        btn_search
         
         frame.getContentPane().add(panel_btn,BorderLayout.SOUTH);
     }

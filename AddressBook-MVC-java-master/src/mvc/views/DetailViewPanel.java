@@ -90,14 +90,14 @@ public class DetailViewPanel extends javax.swing.JPanel {
         setName("txt_address"); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 2, 36)); // NOI18N
-        jLabel1.setText("Name:");
+        jLabel1.setText("NAME*");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 2, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(204, 255, 204));
-        jLabel2.setText("Mobile number:");
+        jLabel2.setText("mobile number*");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 2, 36)); // NOI18N
-        jLabel3.setText("e-mail:");
+        jLabel3.setText("e-mail*");
 
         txt_name.setBackground(new java.awt.Color(153, 255, 153));
         txt_name.setName("txt_name"); // NOI18N
@@ -140,10 +140,10 @@ public class DetailViewPanel extends javax.swing.JPanel {
                             .addComponent(txt_name)
                             .addComponent(txt_mobileno)
                             .addComponent(txt_email, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE))
-                        .addContainerGap(235, Short.MAX_VALUE))
+                        .addContainerGap(226, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txt_address, javax.swing.GroupLayout.DEFAULT_SIZE, 383, Short.MAX_VALUE))))
+                        .addComponent(txt_address, javax.swing.GroupLayout.DEFAULT_SIZE, 374, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

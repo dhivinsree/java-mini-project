@@ -41,8 +41,9 @@ public class AddressBookController {
      
     
      
-    public void control(){
-        loadPersons();
+    public void control()
+    {
+       
         actionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -146,11 +147,26 @@ public class AddressBookController {
         boolean valid = false;
         String name = contactDetailsPanel.getNameField().getText();
         String mobile = contactDetailsPanel.getMobileField().getText();
-        if (name==null||name.equals("")||(mobile==null||mobile.equals("")))
-            JOptionPane.showMessageDialog(new JFrame(), "Fields Marked as * are Mandatory","Inane error", JOptionPane.ERROR_MESSAGE);
-        else 
-            valid = true;
+        Long phone;
+        if (name==null||name.equals(""))||(mobile==null||mobile.equals(""))
+            JOptionPane.showMessageDialog(new JFrame(), "enter the name","Inane error", JOptionPane.ERROR_MESSAGE);
+        else if (mobile.length()>0)
+        {
+                try
+                {
+                    system.out.println("going to chech phone number");
+                   // phone = Long.parseLong(mobile);
+                    
+                }
+            catch (NumberFormatException e)
+            {
+           else if(mobile.length()>10)!!(mobile.length()<10))
+                
+                 JOptionPane.showMessageDialog(new JFrame(), "not a valid mobile number,"Inane error", JOptionPane.ERROR_MESSAGE);"
+            }}
+        valid = true;
         return valid;
+            
                
     }
      
